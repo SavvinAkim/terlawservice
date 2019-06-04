@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Lato Bold';
-    src: url('Lato-Bold.eot');
-    src: url('Lato-Bold.eot?#iefix') format('embedded-opentype'),
-    url('Lato-Bold.woff') format('woff'),
-    url('Lato-Bold.ttf') format('truetype');
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Bold.woff') format('woff'),
+    url('../fonts/Lato-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -28,13 +28,13 @@
     }
 
 @mixin regular {
-    font-family: 'Lato Regular', sans-serif;
+    font-weight: normal;
 }
 
 @mixin semibold {
-    font-family: 'Lato Semibold', sans-serif;
+    font-weight: 600;
 }
 
 @mixin bold {
-    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold;
 }
