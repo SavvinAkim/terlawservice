@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script> <!--- https://wowjs.uk/docs.html для управления --->
+    <!--
+        data-wow-duration: изменить продолжительность анимации
+        data-wow-delay: задержка перед началом анимации
+        data-wow-offset: расстояние для запуска анимации (относится к нижней части браузера)
+        data-wow-iteration: количество повторений анимации
+    -->
+    <script src="js/wow.min.js"></script>
     <script>
+        new WOW().init();
+    </script>
+    <!--<script>
         wow = new WOW(
                 {
-                    boxClass:     'animate',
+                    boxClass:     'animation',
                     animateClass: 'animated',   //default
                     offset:       0,   //default
                     mobile:       true,   //default
@@ -20,9 +29,9 @@
                 }
             )
         wow.init();
-    </script>
+    </script>-->
 </head>
 <body>
-    <h1 class="animate fadeInUp">ПРИВЕТ!</h1>
+    <h1 class="wow FadeInUp">Привет</h1>
 </body>
 </html>
