@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Территория юридических услуг</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script> <!--- https://wowjs.uk/docs.html для управления --->
+    <script>
+        wow = new WOW(
+                {
+                    boxClass:     'animate',
+                    animateClass: 'animated',   //default
+                    offset:       0,   //default
+                    mobile:       true,   //default
+                    live:         true   //default
+                }
+            )
+        wow.init();
+    </script>
 </head>
 <body>
-    
+    <h1 class="animate fadeInUp">ПРИВЕТ!</h1>
 </body>
 </html>
